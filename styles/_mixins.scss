@@ -1,0 +1,9 @@
+$color-primary: #FAEAD0;
+$color-secondary: #6C2628;
+$color-tertiary: #F6A204;
+
+@mixin desktop() {
+	@media (max-width: 600px) {
+		@content;
+	}
+}
