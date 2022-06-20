@@ -18,7 +18,7 @@
 		line-height: .6;
 	}
 
-	.body {
+	.headerBody {
 		grid-column: 1;
 		grid-row: 2;
 		background-color: $color-secondary;
@@ -28,6 +28,53 @@
 
 /* Body Sections */
 
+.bodyA {
+	grid-column: 1;
+	grid-row: 3;
+	background-color: $color-secondary;
+	height: 100%;
+
+	h3 {
+		text-align: start;
+		color: $color-tertiary;
+		grid-column: 1;
+		font-family: 'League Gothic', sans-serif;;
+		margin-bottom: 0;
+		margin-top: 0;
+		line-height: .6;
+	}
+
+	.bodyBlockA{
+		grid-column: 1;
+		grid-row: 2;
+		background-color: $color-tertiary;
+		height: 60vh;
+	}
+}
+
+.bodyTwo {
+	grid-column: 1;
+	grid-row: 4;
+	height: 100%;
+
+	h3 {
+		text-align: end;
+		color: $text-quaternary;
+		grid-column: 1;
+		font-family: 'League Gothic', sans-serif;;
+		margin-bottom: 0;
+		margin-top: 0;
+		line-height: .6;
+		background-color: $color-tertiary;
+	}
+
+	.bodyBlockTwo{
+		grid-column: 1;
+		grid-row: 2;
+		background-color: $color-quaternary;
+		height: 60vh;
+	}
+}
 
 
 @media (max-width: 600px) {

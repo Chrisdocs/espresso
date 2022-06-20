@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
 
-$color-primary: #FAEAD0;
-$color-secondary: #6C2628;
-$color-tertiary: #F6A204;
+$color-primary: #f9e5c5;
+$color-secondary: #d06e0c;
+$color-tertiary: #431b1a;
+$color-quaternary: #1A1416;
 
 $txt-primary: $color-secondary;
+$text-secondary: $color-primary;
+$text-quaternary: $color-quaternary;
 
 @mixin desktop() {
 	@media (max-width: 600px) {
