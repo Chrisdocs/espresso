@@ -6,9 +6,9 @@ import BodySectionB from './BodySectionB';
 export default function Header () {
 	return (
 		<div className={styles.header}>
-		<h1 className={styles.headerTitle}>
+		<p className={styles.headerTitle}>
 			ESPRESSO
-			</h1>
+			</p>
 		<div className={styles.headerBody}>
 		</div>
 		<BodySectionA />
