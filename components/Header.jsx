@@ -10,6 +10,7 @@ export default function Header () {
 			ESPRESSO
 			</p>
 		<div className={styles.headerBody}>
+			<p className={styles.content}>test</p>
 		</div>
 		<BodySectionA />
 		<BodySectionB />

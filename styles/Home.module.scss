@@ -16,7 +16,7 @@
 		background-image: linear-gradient($txt-gradient, $txt-primary);
 		background-clip: text;
 		color: transparent;
-		font-family: 'League Gothic', sans-serif;;
+		font-family: $font-primary;
 		margin-bottom: 0;
 		margin-left: 0;
 		margin-right: 0;
@@ -29,6 +29,12 @@
 		grid-row: 2;
 		background-color: $color-secondary;
 		height: 60vh;
+
+		.content{
+			text-align: center;
+			margin-top: 30vh;
+			font-family: $font-primary;
+		}
 	}
 }
 
@@ -58,6 +64,16 @@
 		background-color: $color-tertiary;
 		height: 60vh;
 	}
+
+	.content{
+		padding-top: 30vh;
+		p {
+		z-index: 99;
+		color: black;
+		text-align: center;
+		font-size: larger;
+		}
+	}
 }
 
 .bodyTwo {
@@ -82,6 +98,17 @@
 		grid-row: 2;
 		background-color: $color-quaternary;
 		height: 60vh;
+	}
+
+	.content{
+		padding-top: 30vh;
+		p {
+		z-index: 99;
+		color: black;
+		text-align: center;
+		font-size: larger;
+		background-color: $color-quaternary;
+		}
 	}
 }
 

@@ -11,6 +11,8 @@ $txt-primary: $color-secondary;
 $text-secondary: $color-primary;
 $text-quaternary: $color-quaternary;
 
+$font-primary: 'League Gothic', sans-serif;
+
 @mixin desktop() {
 	@media (max-width: 600px) {
 		@content;
