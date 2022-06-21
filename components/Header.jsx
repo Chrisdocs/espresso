@@ -10,7 +10,10 @@ export default function Header () {
 			ESPRESSO
 			</p>
 		<div className={styles.headerBody}>
-			<p className={styles.content}>test</p>
+			<p className={styles.contentTitle}>Welcome.</p>
+			<p className={styles.content}>
+				Welcome to my Template 'Espresso'!  You can add custom text in here.  It will automatically scale with the screen size.
+			</p>
 		</div>
 		<BodySectionA />
 		<BodySectionB />

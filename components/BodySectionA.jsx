@@ -7,7 +7,8 @@ export default function BodySectionA(style1, style2, title) {
       <p className={styles.title}>TITLE</p>
       <div className={styles.bodyBlockA}>
         <div className={styles.content}>
-          <p>test</p>
+					<p className={styles.contentTitle}>Title</p>
+          <p>You can put even more text down here! Woah!</p>
         </div>
       </div>
     </div>

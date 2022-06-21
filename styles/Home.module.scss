@@ -32,8 +32,19 @@
 
 		.content{
 			text-align: center;
-			margin-top: 30vh;
-			font-family: $font-primary;
+			margin-top: 10vh;
+			font-family: $font-secondary;
+			font-size: larger;
+			font-weight: bold;
+			color: $color-quinary;
+		}
+		.contentTitle{
+			margin-top: 15vh;
+			text-align: center;
+			font-family: $font-secondary;
+			font-size: x-large;
+			font-weight: bold;
+			color: $color-quinary;
 		}
 	}
 }
@@ -47,7 +58,7 @@
 	height: 100%;
 
 
-	p {
+	.title {
 		text-align: start;
 		font-size: 15vw;
 		color: $color-tertiary;
@@ -66,12 +77,16 @@
 	}
 
 	.content{
-		padding-top: 30vh;
+		padding-top: 15vh;
+		.contentTitle{
+			font-size: x-large;
+			padding-bottom: 10vh;
+		}
 		p {
-		z-index: 99;
-		color: black;
+		color: $color-secondary;
 		text-align: center;
 		font-size: larger;
+		font-family: $font-secondary;
 		}
 	}
 }
@@ -81,7 +96,7 @@
 	grid-row: 4;
 	height: 100%;
 
-	p {
+	.title {
 		text-align: end;
 		font-size: 15vw;
 		color: $text-quaternary;
@@ -101,13 +116,16 @@
 	}
 
 	.content{
-		padding-top: 30vh;
+		padding-top: 15vh;
+		.contentTitle{
+			font-size: x-large;
+			padding-bottom: 10vh;
+		}
 		p {
-		z-index: 99;
-		color: black;
+		color: $color-primary;
 		text-align: center;
 		font-size: larger;
-		background-color: $color-quaternary;
+		font-family: $font-secondary;
 		}
 	}
 }
