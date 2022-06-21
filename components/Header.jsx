@@ -7,16 +7,16 @@ export default function Header () {
 	return (
 		<div className={styles.header}>
 		<p className={styles.headerTitle}>
-			ESPRESSO
+			CHRIS
+			WOLFE
 			</p>
 		<div className={styles.headerBody}>
-			<p className={styles.contentTitle}>Welcome.</p>
+			<p className={styles.contentTitle}>Hello and welcome.</p>
 			<p className={styles.content}>
-				Welcome to my Template 'Espresso'!  You can add custom text in here.  It will automatically scale with the screen size.
+			What I do is about You. But if you want to know, here is a bit about me ↴
 			</p>
 		</div>
-		<BodySectionA />
-		<BodySectionB />
+
 	</div>
 	)
 }

@@ -1,8 +1,10 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Footer from '../components/Footer'
-import Header from '../components/Header'
-import styles from '../styles/Home.module.scss'
+import Head from 'next/head';
+import Image from 'next/image';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import styles from '../styles/Home.module.scss';
+import BodySectionA from '../components/BodySectionA';
+import BodySectionB from '../components/BodySectionB';
 
 export default function Home() {
   return (
@@ -15,6 +17,8 @@ export default function Home() {
 
       <main className={styles.main}>
 				<Header />
+				<BodySectionA />
+				<BodySectionB />
       </main>
 
       <footer>

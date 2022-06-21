@@ -9,8 +9,6 @@
 	
 	.headerTitle{
 		font-size: 36vw;
-		grid-column: 1;
-		grid-row: 1;
 		color: $txt-primary;
 		background-image: linear-gradient($txt-gradient, $txt-primary);
 		background-clip: text;
@@ -24,14 +22,15 @@
 	}
 
 	.headerBody {
-		grid-column: 1;
-		grid-row: 2;
 		background-color: $color-secondary;
-		height: 60vh;
+		padding-top: 10vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 10vh;
 
 		.content{
 			text-align: center;
-			margin-top: 10vh;
+			margin-top: 5vh;
 			font-family: $font-secondary;
 			font-size: larger;
 			font-weight: bold;
@@ -50,18 +49,13 @@
 
 /* Body Sections */
 
-.bodyA {
-	grid-column: 1;
-	grid-row: 3;
+.bodyOne {
 	background-color: $color-secondary;
-	height: 100%;
-
 
 	.title {
 		text-align: start;
 		font-size: 15vw;
 		color: $color-tertiary;
-		grid-column: 1;
 		font-family: 'League Gothic', sans-serif;
 		margin-bottom: 0;
 		margin-top: 0;
@@ -69,37 +63,35 @@
 	}
 
 	.bodyBlockA{
-		grid-column: 1;
-		grid-row: 2;
 		background-color: $color-tertiary;
-		height: 60vh;
 	}
 
 	.content{
-		padding-top: 15vh;
+		padding-top: 10vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 10vh;
 		.contentTitle{
 			font-size: x-large;
-			padding-bottom: 10vh;
+			padding-bottom: 5vh;
 		}
 		p {
 		color: $color-secondary;
 		text-align: center;
 		font-size: larger;
 		font-family: $font-secondary;
+		white-space: normal;
 		}
 	}
 }
 
 .bodyTwo {
-	grid-column: 1;
-	grid-row: 4;
 	height: 100%;
 
 	.title {
 		text-align: end;
 		font-size: 15vw;
 		color: $text-quaternary;
-		grid-column: 1;
 		font-family: 'League Gothic', sans-serif;
 		margin-bottom: 0;
 		margin-top: 0;
@@ -108,14 +100,14 @@
 	}
 
 	.bodyBlockTwo{
-		grid-column: 1;
-		grid-row: 2;
 		background-color: $color-quaternary;
-		height: 60vh;
 	}
 
 	.content{
-		padding-top: 15vh;
+		padding-top: 10vh;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		padding-bottom: 10vh;
 		.contentTitle{
 			font-size: x-large;
 			padding-bottom: 10vh;
