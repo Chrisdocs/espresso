@@ -16,7 +16,7 @@ export default function Card() {
       web: "https://github.com/Chrisdocs/SocNetAPI",
       img: smapi,
       alt: "graphic reading API",
-			key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000
+      key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000,
     },
     {
       name: "BikeSleuth",
@@ -26,17 +26,17 @@ export default function Card() {
       web: "https://bikesleuth.herokuapp.com/#/",
       img: bike,
       alt: "Graphic with bike",
-			key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000
+      key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000,
     },
     {
-      name: "Readme Generator",
-      about: "Terminal Based Program for generating Readme.md's",
+      name: "Readme Gen",
+      about: "Terminal Program for generating Readme.md's",
       tech: "FS Inquirer Markdown-toc",
       github: "https://github.com/Chrisdocs/Readme-Gen",
       web: "https://github.com/Chrisdocs/Readme-Gen",
       img: md,
       alt: "graphic reading .md",
-			key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000 
+      key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000,
     },
     {
       name: "D&D Map App",
@@ -46,37 +46,36 @@ export default function Card() {
       web: "https://chrisdocs.github.io/darksky/",
       img: dnd,
       alt: "graphic with dragon",
-			key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000 
+      key: Math.floor(Math.random() * (9999 - 1000 + 1)) + 1000,
     },
   ];
 
   return (
-    <div className={styles.cardCont}>
-      {projects.map((project, index) => {
-        return (
-          <div className={styles.flip} key={index}>
-            <div className={styles.card}>
-							<div className={styles.cardFront} id='face'>
-								<Image
-									src={project.img}
-									alt={project.alt}
-									width={240}
-									height={240}
-								></Image>
-							</div>
-              <div className={styles.cardBack} id='face'>
-                <h3>
+    <div>
+			<h3 className={styles.projectText}>Explore through my GitHub <a href="https://github.com/Chrisdocs" target="_blank" rel="noreferrer" className={styles.btn}>{`→`}</a></h3>
+      <div className={styles.cardCont}>
+        {projects.map((project, index) => {
+          return (
+            <div className={styles.flip} key={index}>
+              <div className={styles.card}>
+                <div className={styles.cardFront} id="face">
+                  <Image
+                    src={project.img}
+                    alt={project.alt}
+                    width={240}
+                    height={240}
+                  ></Image>
+                </div>
+                <div className={styles.cardBack} id="face">
                   <a target="_blank" rel="noreferrer" href={project.github}>
-                    {project.name}
+                    <h3>{project.name}</h3>
                   </a>
-                </h3>
-                <p>{project.about}</p>
-                <p>{project.tech}</p>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }
