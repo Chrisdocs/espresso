@@ -1,14 +1,14 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
+import Projects from "./Projects";
 
 export default function BodySectionB() {
   return (
     <div className={styles.bodyTwo}>
-      <p className={styles.title}>TITLE</p>
+      <p className={styles.title}>Projects</p>
       <div className={styles.bodyBlockTwo}>
         <div className={styles.content}>
-					<p className={styles.contentTitle}>Title</p>
-          <p>And wouldn't you believe it, a THIRD section for text - IN your third section! Amazing!</p>
+					<Projects />
         </div>
       </div>
     </div>
