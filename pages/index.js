@@ -6,7 +6,9 @@ import styles from '../styles/Home.module.scss';
 import BodySectionA from '../components/BodySectionA';
 import BodySectionB from '../components/BodySectionB';
 
+
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <Head>

@@ -5,8 +5,12 @@ import smapi from "../public/smapi.png";
 import bike from "../public/bike.png";
 import md from "../public/md.png";
 import dnd from "../public/dnd.png";
+import { useWindowSize } from "@react-hook/window-size";
 
 export default function Card() {
+  const [width, height] = useWindowSize({ fps: 60 });
+  console.log("window width: ", width, "window height: ", height);
+
   let projects = [
     {
       name: "Social API",
@@ -50,32 +54,76 @@ export default function Card() {
     },
   ];
 
-  return (
-    <div>
-			<h3 className={styles.projectText}>Explore through my GitHub <a href="https://github.com/Chrisdocs" target="_blank" rel="noreferrer" className={styles.btn}>{`→`}</a></h3>
-      <div className={styles.cardCont}>
-        {projects.map((project, index) => {
-          return (
-            <div className={styles.flip} key={index}>
-              <div className={styles.card}>
-                <div className={styles.cardFront} id="face">
-                  <Image
-                    src={project.img}
-                    alt={project.alt}
-                    width={240}
-                    height={240}
-                  ></Image>
-                </div>
-                <div className={styles.cardBack} id="face">
-                  <a target="_blank" rel="noreferrer" href={project.github}>
-                    <h3>{project.name}</h3>
-                  </a>
+  if (width >= 450) {
+    return (
+      <div>
+        <h3 className={styles.projectText}>
+          Explore through my GitHub{" "}
+          <a
+            href="https://github.com/Chrisdocs"
+            target="_blank"
+            rel="noreferrer"
+            className={styles.btn}
+          >{`→`}</a>
+        </h3>
+        <div className={styles.cardCont}>
+          {projects.map((project, index) => {
+            return (
+              <div className={styles.flip} key={index}>
+                <div className={styles.card}>
+                  <div className={styles.cardFront} id="face">
+                    <Image
+                      className={styles.cardImg}
+                      src={project.img}
+                      alt={project.alt}
+                      width={240}
+                      height={240}
+                    ></Image>
+                  </div>
+                  <div className={styles.cardBack} id="face">
+                    <a target="_blank" rel="noreferrer" href={project.github}>
+                      <h3>{project.name}</h3>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return (
+      <div>
+        <div className={styles.mobilePContainer}>
+          <h3 className={styles.mobileText}>
+            Explore through my GitHub{" "}
+            <a
+              href="https://github.com/Chrisdocs"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.btn}
+            >{`→`}</a>
+          </h3>
+          <div className={styles.mobileCard}>
+            {projects.map((project, index) => {
+              return (
+                <div className={styles.each} key={index}>
+                  <div className={styles.mobileImgContainer} id="face">
+                    <Image
+                      className={styles.mobileCardImg}
+                      src={project.img}
+                      alt={project.alt}
+                      width={240}
+                      height={240}
+                    ></Image>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    );
+  }
 }

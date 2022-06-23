@@ -231,52 +231,21 @@
 	}
 }
 
-@media screen and (max-width: 450px) {
-	
-.projectText{
-	color: $text-quinary;
-	text-align: center;
-	margin-bottom: 10vh;
-
-	.btn {
-		background-color: $text-quinary;
-		color: $text-quaternary;
-	}
-
-	.btn:hover{
-		background-color: $color-secondary;
-		color: $text-quaternary;
-	}
-}
-
-.cardCont {
-
-	.flip{
-		background-color: none;
-		perspective: none;
-	}
-	
-	.card{
-		transition: none;
-		transform-style: none;
-	}
-	
-	.flip:hover .card{
-		transform: none;
-	}
-	
-	.cardFront, .cardBack{
-		-webkit-backface-visibility: none; /* Safari */
-		backface-visibility: none;
-	}
-	
-	.cardFront{
-		margin-top: 3vh;
-	}
-	
-	.cardBack{
-		transform: none;
+.mobilePContainer {
+	.mobileText{
 
 	}
-}
+	.mobileCard{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		.each{
+			margin-top: 3vh;
+			background-color: $color-primary;
+			.mobileImgContainer{
+				.mobileCardImg{
+				}
+			}
+		}
+	}
 }
