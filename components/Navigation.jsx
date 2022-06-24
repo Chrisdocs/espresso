@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { useWindowSize } from "@react-hook/window-size";
+import logo from '../public/logo.png';
 
 export default function Nav() {
   const [width, height] = useWindowSize({ fps: 60 });
@@ -12,7 +13,7 @@ export default function Nav() {
   const [windowSize, setWindowSize] = useState(null);
   useEffect(() => setWindowSize(width));
 
-  if (windowSize > 450) {
+  if (windowSize > 850) {
     return (
       <div className={styles.deskopNav}>
         <a href="#home" className={styles.active}>
@@ -91,7 +92,11 @@ export default function Nav() {
       // </div>
       <nav className="navigation">
         <a href="/" className="brand-name">
-          Logo
+          <Image
+						src={logo}
+						height={35}
+						width={40}
+					/>
         </a>
         <button
           className="hamburger"
@@ -120,13 +125,26 @@ export default function Nav() {
         >
           <ul>
             <li>
-              <a href="/home">Home</a>
+              <Link href="#about">
+                <a>About</a>
+              </Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <Link href="#projects">
+                <a>Projects</a>
+              </Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link href="#contact">
+                <a>Contact</a>
+              </Link>
+            </li>
+            <li>
+              <a
+                download
+                href="resume.pdf"
+                className="resumeBtn"
+              >{`Resume ↓`}</a>
             </li>
           </ul>
         </div>
