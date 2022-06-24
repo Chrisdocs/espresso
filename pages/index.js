@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import styles from '../styles/Home.module.scss';
 import BodySectionA from '../components/BodySectionA';
 import BodySectionB from '../components/BodySectionB';
+import Nav from '../components/Navigation';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+				<Nav />
 				<Header />
 				<BodySectionA />
 				<BodySectionB />

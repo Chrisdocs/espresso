@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.scss";
 
 export default function BodySectionA(style1, style2, title) {
   return (
-    <div className={styles.bodyOne}>
+    <div className={styles.bodyOne} id="about">
       <p className={styles.title}>About</p>
       <div className={styles.bodyBlockA}>
         <div className={styles.content}>
