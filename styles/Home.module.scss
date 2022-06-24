@@ -276,17 +276,56 @@
 
 /* Navigation - mobile in sep .css file */
 
-.desktopNav{
+.desktopNav {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: $txt-primary;
+	background-color: $color-quaternary;
 
-	.active{
+	.navLeft {
 
+		margin-right: auto;
+		margin-top: 5px;
+
+		a {
+			padding-left: 10px;
+			padding-right: 10px;
+			align-items: center;
+		}
+
+		a:hover {
+			color: $color-primary;
+		}
 	}
-	.pages{
 
-	}
-	.icon{
-		.bars{
+	.navRight {
 
+		
+
+		a {
+			padding: 10px 10px;
+			font-weight: bold;
+			font-family: $font-secondary;
+		}
+
+		a:hover {
+			color: $color-tertiary;
+		}
+
+		.resumeBtn {
+			background-color: $color-primary;
+		}
+
+		.resumeBtn:hover {
+			background-color: $color-primary;
 		}
 	}
 }

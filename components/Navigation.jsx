@@ -17,29 +17,30 @@ export default function Nav() {
 
   if (windowSize > 850) {
     return (
-      <div className={styles.deskopNav}>
-        <a href="#home" className={styles.active}>
-          Logo
-        </a>
-        <div className={styles.pages}>
-          <Link href="#about">
-            <a>About</a>
-          </Link>
-          <Link href="#projects">
-            <a>Projects</a>
-          </Link>
-          <Link href="#contact">
-            <a>Contact</a>
-          </Link>
-        </div>
-        <a
-          href="javascript:void(0);"
-          className={styles.icon}
-          onclick="myFunction()"
-        >
-          <i class="fa fa-bars"></i>
-        </a>
+			<nav id="nav" className={styles.desktopNav}>
+      <div className={styles.navLeft}>
+          <a className={styles.topBtn} onClick={top}>
+						<Image
+							src={logo}
+							height={40}
+							width={40}
+							alt="logo"
+						/>
+					</a>
       </div>
+      <div className={styles.navRight}>
+        <Link href="#about">
+          <a>About</a>
+        </Link>
+        <Link href="#projects">
+          <a>Projects</a>
+        </Link>
+        <Link href="#contact">
+          <a>Contact</a>
+        </Link>
+        <a download href="resume.pdf" className={styles.resumeBtn}>{`Resume ↓`}</a>
+      </div>
+    </nav>
     );
   } else {
     return (
