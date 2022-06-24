@@ -233,7 +233,8 @@
 
 .mobilePContainer {
 	.mobileText{
-
+		text-align: center;
+		color: $text-secondary;
 	}
 	.mobileCard{
 		display: flex;
@@ -241,8 +242,11 @@
 		justify-content: space-around;
 		.each{
 			margin-top: 3vh;
-			background-color: $color-primary;
+			background-color: $color-secondary;
 			.mobileImgContainer{
+				width: 100vw;
+				display: flex;
+				justify-content: center;
 				.mobileCardImg{
 				}
 			}

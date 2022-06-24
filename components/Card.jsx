@@ -109,15 +109,17 @@ export default function Card() {
             {projects.map((project, index) => {
               return (
                 <div className={styles.each} key={index}>
+										<a href={project.github} target="_blank">
                   <div className={styles.mobileImgContainer} id="face">
                     <Image
                       className={styles.mobileCardImg}
                       src={project.img}
                       alt={project.alt}
-                      width={240}
-                      height={240}
+                      width={130}
+                      height={130}
                     ></Image>
                   </div>
+										</a>
                 </div>
               );
             })}
