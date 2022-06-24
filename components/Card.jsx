@@ -1,4 +1,5 @@
 import React from "react";
+import { useState, useEffect } from 'react';
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import smapi from "../public/smapi.png";
@@ -9,7 +10,11 @@ import { useWindowSize } from "@react-hook/window-size";
 
 export default function Card() {
   const [width, height] = useWindowSize({ fps: 60 });
-  console.log("window width: ", width, "window height: ", height);
+
+	// This takes the width value provided by the react-hook/window-size package and sets it to state using 'useEffect'  the prevents hydration errors in the react DOM render
+	
+	const [ windowSize, setWindowSize ] = useState(null)
+	useEffect(() => setWindowSize(width))
 
   let projects = [
     {
@@ -54,7 +59,7 @@ export default function Card() {
     },
   ];
 
-  if (width >= 450) {
+  if (windowSize >= 450) {
     return (
       <div>
         <h3 className={styles.projectText}>
