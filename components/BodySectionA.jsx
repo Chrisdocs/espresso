@@ -22,7 +22,7 @@ export default function BodySectionA(style1, style2, title) {
 				</Link>
           </p>
           <p>
-            In my Personal life... The outdoors call me, and I try to spend as
+            In my spare time... The outdoors call me, and I try to spend as
             much time there as I can. Whether it's a walk through our local park
             or a multi-day backpacking trip, I'm game. Then there is the more
             obvious passion - technology. I love seeing how technology can
