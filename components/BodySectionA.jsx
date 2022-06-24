@@ -1,4 +1,5 @@
 import React from "react";
+import Link from 'next/link'
 import styles from "../styles/Home.module.scss";
 
 export default function BodySectionA(style1, style2, title) {
@@ -9,12 +10,16 @@ export default function BodySectionA(style1, style2, title) {
         <div className={styles.content}>
           <p className={styles.contentTitle}>Yours truly.</p>
           <p>
-            Highly adaptable and creative individual with strong business acumen
-            able to solve common and complex organizational issues driving
-            growth and transformation. Trained in full-stack development,
-            building modern ground up web applications. Seeking innovative teams
-            developing cutting edge applications using new and established
-            technologies. Here are some things I have worked on. ↴
+					Highly adaptable and creative individual with strong business
+				acumen able to solve common and complex organizational issues
+				driving growth and transformation. Trained in full-stack
+				development, building modern ground up web applications. Seeking
+				innovative teams developing cutting edge applications using new
+				and established technologies. Here are some things I have worked
+				on.{" "}
+				<Link href="#projects">
+					<a className={styles.btn}>{`↴`}</a>
+				</Link>
           </p>
           <p>
             In my Personal life... The outdoors call me, and I try to spend as

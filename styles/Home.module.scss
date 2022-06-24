@@ -35,6 +35,17 @@
 			font-size: larger;
 			font-weight: bold;
 			color: $color-quinary;
+
+			.btn{
+				background-color: $color-primary;
+				padding: 0 2px 0 2px;
+			}
+			.btn:hover{
+				background-color: $color-tertiary;
+				a{
+					color: $text-secondary;
+				}
+			}
 		}
 		.contentTitle{
 			margin-top: 15vh;
@@ -81,6 +92,15 @@
 		font-size: larger;
 		font-family: $font-secondary;
 		white-space: normal;
+
+		a{
+			background-color: $color-primary;
+			padding: 0 2px 0 2px;
+		}
+		a:hover{
+			background-color: $color-secondary;
+			color: $text-secondary;
+		}
 		}
 	}
 }
