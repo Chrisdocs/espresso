@@ -6,9 +6,17 @@
 .header{
 	display: grid;
   text-align: center;
+
+	.headerIntro{
+		font-family: $font-secondary;
+		margin-bottom: 0;
+		margin-top: 10%;
+		font-size: x-large;
+		color: $text-quinary;
+	}
 	
 	.headerTitle{
-		font-size: 36vw;
+		font-size: 28vw;
 		color: $txt-primary;
 		background-image: linear-gradient($txt-gradient, $txt-primary);
 		background-clip: text;
@@ -17,6 +25,7 @@
 		margin-bottom: 0;
 		margin-left: 0;
 		margin-right: 0;
+		margin-top: 3vh;
 		padding-top: 6vh;
 		line-height: .6;
 	}
@@ -26,7 +35,7 @@
 		padding-top: 10vh;
 		padding-left: 5vw;
 		padding-right: 5vw;
-		padding-bottom: 10vh;
+		padding-bottom: 22vh;
 
 		.content{
 			text-align: center;
@@ -37,14 +46,12 @@
 			color: $color-quinary;
 
 			.btn{
-				background-color: $color-primary;
+				background-color: $txt-gradient;
 				padding: 0 2px 0 2px;
 			}
 			.btn:hover{
 				background-color: $color-tertiary;
-				a{
-					color: $text-secondary;
-				}
+				color: $text-secondary;
 			}
 		}
 		.contentTitle{
@@ -54,6 +61,14 @@
 			font-size: x-large;
 			font-weight: bold;
 			color: $color-quinary;
+		}
+	}
+}
+
+@media screen and(max-width: 450px) {
+	.header{
+		.headerTitle{
+			margin-top: 3vh;
 		}
 	}
 }
@@ -141,47 +156,22 @@
 	}
 }
 
-/* Footer */
-
-.footer {
-
-	p{
-		text-align: center;
-		font-family: 'League Gothic', sans-serif;
-		font-size: small;
-		color: $color-primary;
-		background-color: $color-quinary;
-		margin-top: 0;
-		margin-bottom: 0;
-		margin-top: 0;
-		padding-bottom: 2vh;
-		padding-top: 2vh;
-	}
-}
-
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-
 /* Projects */
 
 .projectText{
 	color: $text-quinary;
 	text-align: center;
 	margin-bottom: 10vh;
+	font-family: $font-secondary;
 
 	.btn {
-		background-color: $text-quinary;
+		background-color: $txt-gradient;
 		color: $text-quaternary;
 	}
 
 	.btn:hover{
-		background-color: $color-secondary;
-		color: $text-quaternary;
+		background-color: $color-quaternary;
+		color: $text-secondary;
 	}
 }
 
@@ -328,5 +318,31 @@
 			background-color: $color-primary;
 		}
 	}
+}
+
+/* Footer */
+
+.footer {
+
+	p{
+		text-align: center;
+		font-family: 'League Gothic', sans-serif;
+		font-size: large;
+		color: $color-primary;
+		background-color: $color-quinary;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+		padding-bottom: 2vh;
+		padding-top: 2vh;
+	}
+}
+
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
 }
 

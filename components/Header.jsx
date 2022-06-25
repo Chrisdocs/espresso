@@ -7,12 +7,13 @@ import BodySectionB from './BodySectionB';
 export default function Header () {
 	return (
 		<div className={styles.header}>
+			<p className={styles.headerIntro}>Hey there! I'm</p>
 		<p className={styles.headerTitle}>
 			CHRIS
 			WOLFE
 			</p>
 		<div className={styles.headerBody}>
-			<p className={styles.contentTitle}>Hello and welcome.</p>
+			<p className={styles.contentTitle}>Welcome.</p>
 			<p className={styles.content}>
 			What I do is about what you need. To get started here is a bit about me {" "}
 			<Link href="#about">
