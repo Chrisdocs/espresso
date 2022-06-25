@@ -2,17 +2,17 @@ import React from "react";
 import { useState, useEffect } from 'react';
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
-import smapi from "../public/smapi.png";
-import bike from "../public/bike.png";
-import md from "../public/md.png";
-import dnd from "../public/dnd.png";
+import smapi from "../public/smapi.webp";
+import bike from "../public/bike.webp";
+import md from "../public/md.webp";
+import dnd from "../public/dnd.webp";
 import { useWindowSize } from "@react-hook/window-size";
 
 export default function Card() {
   const [width, height] = useWindowSize({ fps: 60 });
 
 	// This takes the width value provided by the react-hook/window-size package and sets it to state using 'useEffect'  the prevents hydration errors in the react DOM render
-	
+
 	const [ windowSize, setWindowSize ] = useState(null)
 	useEffect(() => setWindowSize(width))
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { useWindowSize } from "@react-hook/window-size";
-import logo from '../public/logo.png';
+import logo from '../public/logo.webp';
 
 export default function Nav() {
   const [width, height] = useWindowSize({ fps: 60 });
@@ -61,7 +61,8 @@ export default function Nav() {
           {/* icon from Heroicons.com */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+						width={20}
+						height={20}
             viewBox="0 0 20 20"
             fill="white"
           >
